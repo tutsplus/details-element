@@ -1,0 +1,186 @@
+@import url('../bower_components/normalize.css/normalize.css');
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+}
+
+.demo-header {
+    padding: 10px;
+    background-color: #f6f7f8;
+    color: #696f7c;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #dfe1e6;
+}
+
+.demo-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 680px;
+    padding: 50px 20px;
+}
+
+.demo-section {
+    margin-bottom: 100px;
+}
+
+.section-header p {
+    color: #696f7c;
+    margin-bottom: 0;
+}
+.section-header h1 {
+    margin-top: 0;
+}
+
+/* FAQ Example */
+
+#faq details {
+    margin-bottom: 20px;
+}
+
+#faq details > details {
+    padding: 15px;
+    background-color: #f6f7f8;
+}
+#faq details > details > summary {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+#faq summary {
+    cursor: pointer;
+}
+#faq .detail-content {
+    font: 400 14px/22px "Merriweather";
+}
+#faq .section-content summary::-webkit-details-marker {
+    color: #696f7c;
+    margin-right: 10px;
+}
+
+/* Pricing table Example */ 
+
+#pricing .column {
+    width: 50%;
+    float: left;
+}
+#pricing .column-header {
+    background-color: #f6f7f8;
+    padding: 20px;
+}
+#pricing .column-header h2 {
+    margin: 0;
+}
+#pricing .column-desc {
+    margin-top: 10px;
+    color: #696f7c;
+    font: 400 14px "Merriweather";
+}
+#pricing .column-desc,
+#pricing .column-price {
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    color: #696f7c;
+} 
+#pricing .column-price,
+#pricing .column-button {
+    width: 50%;
+    float: left;
+}
+#pricing .column-price {
+    font-size: 21px;
+}
+#pricing .column-button {
+    color: #fff;
+    background-color: #00aeef;
+    border: 0;
+    font-family: "Lato", sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+#pricing .column-button:hover,
+#pricing .column-button:active {
+    background-color: #1f8dd6;
+}
+
+#pricing .column-features {
+    border: 1px solid #f6f7f8;
+}
+
+#pricing .column-features details {
+    border-bottom: 1px solid #f6f7f8;
+}
+#pricing .column-features details p {
+    font: 400 14px "Merriweather";
+    margin: 0; 
+    padding: 20px;
+}
+#pricing .column-features details:last-child {
+    border-bottom: 0;
+}
+#pricing .section-content summary {
+    color: #696f7c;
+    cursor: pointer;
+    padding: 20px;
+}
+#pricing .section-content summary::-webkit-details-marker {
+    display: none;
+}
+#pricing .section-content summary:focus {
+    outline: none;
+    background-color: #83b81a;
+    color: #fff;
+}
+#pricing .section-content summary:before {
+    content: "\2714";
+    color: #696f7c;
+    margin-right: 5px;
+}
+#pricing .section-content summary:focus:before {
+    color: #fff;
+}
+#pricing details[open] summary,
+#pricing details[open] summary:before {
+    background-color: #83b81a;
+    color: #fff;
+}
+
+#pricing .column-basic .column-features {
+    border-right: 0;
+}
