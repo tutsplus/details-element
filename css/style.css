@@ -58,13 +58,16 @@ h1, h2, h3, h4, h5, h6 {
 .demo-section {
     margin-bottom: 100px;
 }
-
+.section-header {
+    margin-bottom: 30px;
+}
 .section-header p {
     color: #696f7c;
     margin-bottom: 0;
 }
 .section-header h1 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* FAQ Example */
@@ -154,18 +157,22 @@ h1, h2, h3, h4, h5, h6 {
 #pricing .column-features details:last-child {
     border-bottom: 0;
 }
+
+
 #pricing .section-content summary {
     color: #696f7c;
     cursor: pointer;
     padding: 20px;
 }
-#pricing .section-content summary::-webkit-details-marker {
-    display: none;
-}
 #pricing .section-content summary:focus {
     outline: none;
     background-color: #83b81a;
     color: #fff;
+}
+
+/* Replacing Arrow marker */
+#pricing .section-content summary::-webkit-details-marker {
+    display: none;
 }
 #pricing .section-content summary:before {
     content: "\2714";
@@ -175,6 +182,8 @@ h1, h2, h3, h4, h5, h6 {
 #pricing .section-content summary:focus:before {
     color: #fff;
 }
+
+/* Open state */
 #pricing details[open] summary,
 #pricing details[open] summary:before {
     background-color: #83b81a;

@@ -47,8 +47,9 @@ h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif}
 .demo-header{padding:10px;background-color:#f6f7f8;color:#696f7c;font-size:12px;text-transform:uppercase;font-weight:600;border-bottom:1px solid #dfe1e6}
 .demo-container{margin-left:auto;margin-right:auto;width:100%;max-width:680px;padding:50px 20px}
 .demo-section{margin-bottom:100px}
+.section-header{margin-bottom:30px}
 .section-header p{color:#696f7c;margin-bottom:0}
-.section-header h1{margin-top:0}
+.section-header h1{margin-top:0;margin-bottom:0}
 #faq details{margin-bottom:20px}
 #faq details>details{padding:15px;background-color:#f6f7f8}
 #faq details>details>summary{font-weight:600;text-transform:uppercase;font-size:14px}
@@ -69,8 +70,8 @@ h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif}
 #pricing .column-features details p{font:400 14px Merriweather;margin:0;padding:20px}
 #pricing .column-features details:last-child{border-bottom:0}
 #pricing .section-content summary{color:#696f7c;cursor:pointer;padding:20px}
-#pricing .section-content summary::-webkit-details-marker{display:none}
 #pricing .section-content summary:focus{outline:0;background-color:#83b81a;color:#fff}
+#pricing .section-content summary::-webkit-details-marker{display:none}
 #pricing .section-content summary:before{content:"\2714";color:#696f7c;margin-right:5px}
 #pricing .section-content summary:focus:before{color:#fff}
 #pricing details[open] summary,#pricing details[open] summary:before{background-color:#83b81a;color:#fff}
