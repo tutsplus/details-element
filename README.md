@@ -1,4 +1,4 @@
-details-element
+#Details Element
 ===============
 
-Demonstrating HTML Interactive Element, &lt;details> and &lt;summary>
+Demonstrating HTML Interactive Element, `&lt;details&gt;` and `&lt;summary&gt;`
