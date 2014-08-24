@@ -70,9 +70,9 @@ h1,h2,h3,h4,h5,h6{font-family:Lato,sans-serif}
 #pricing .column-features details p{font:400 14px Merriweather;margin:0;padding:20px}
 #pricing .column-features details:last-child{border-bottom:0}
 #pricing .section-content summary{color:#696f7c;cursor:pointer;padding:20px}
-#pricing .section-content summary:focus{outline:0;background-color:#83b81a;color:#fff}
+#pricing .section-content summary:focus{outline:0;color:#83b81a}
 #pricing .section-content summary::-webkit-details-marker{display:none}
 #pricing .section-content summary:before{content:"\2714";color:#696f7c;margin-right:5px}
-#pricing .section-content summary:focus:before{color:#fff}
-#pricing details[open] summary,#pricing details[open] summary:before{background-color:#83b81a;color:#fff}
+#pricing .section-content summary:focus:before,#pricing details[open] summary,#pricing details[open] summary:before{color:#83b81a}
 #pricing .column-basic .column-features{border-right:0}
+@media screen and (max-width:540px){#pricing .column{width:100%;float:none}}
